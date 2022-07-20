@@ -31,9 +31,6 @@ public final class Logic {
         for (Cell cell : steps) {
             if (findBy(cell) > 0) {
                 return false;
-              // throw new OccupiedCellException(
-                        //String.format("the cell is occupied")
-               // );
             }
         }
         return true;
@@ -51,7 +48,6 @@ public final class Logic {
                 return index;
             }
         }
-        //throw new FigureNotFoundException();
         return -1;
     }
 }
